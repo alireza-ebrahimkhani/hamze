@@ -1,0 +1,63 @@
+.row{
+    width: 100%;
+    padding: 0 6rem;
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+    grid-gap: 3rem;
+    @include mScreen {
+        padding: 0 3rem;
+        grid-template-columns: repeat(8 , 1fr);
+    }
+    @include sScreen {
+        padding: 0 2rem;
+        grid-template-columns: repeat(4 , 1fr);
+        grid-gap: 2rem;
+    }
+}
+
+.col-full{
+    grid-column: span 12;
+    @include mScreen {
+        grid-column: span 8;
+    }
+    @include sScreen {
+        grid-column: span 4;
+    }
+}
+.col-twoThird{
+    grid-column: span 8;
+    @include mScreen {
+        grid-column: span 4;
+    }
+    @include sScreen {
+        grid-column: span 4;
+    }
+}
+.col-half{
+    grid-column: span 6;
+    @include mScreen {
+        grid-column: span 4;
+    }
+    @include sScreen {
+        grid-column: span 4;
+    }
+}
+
+.col-third{
+    grid-column: span 4;
+    @include mScreen {
+        grid-column: span 4;
+    }
+    @include sScreen {
+        grid-column: span 4;
+    }
+}
+.col-quarter{
+    grid-column: span 3;
+    @include mScreen {
+        grid-column: span 4;
+    }
+    @include sScreen {
+        grid-column: span 4;
+    }
+}

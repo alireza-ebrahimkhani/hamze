@@ -1,0 +1,25 @@
+$maxWidth-sScreen : 599px;
+$maxWidth-mScreen : 1023px;
+$maxWidth-lScreen : 1440px;
+$minWidth-xlScreen : 1441px;
+
+@mixin sScreen() {
+    @media only screen and (max-width: $maxWidth-sScreen) {
+      @content;
+    }
+}
+@mixin mScreen() {
+    @media only screen and (max-width: $maxWidth-mScreen) {
+      @content;
+    }
+}
+@mixin lScreen() {
+    @media only screen and (max-width: $maxWidth-lScreen) {
+      @content;
+    }
+}
+@mixin xlScreen() {
+    @media only screen and (min-width: $minWidth-xlScreen) {
+      @content;
+    }
+}

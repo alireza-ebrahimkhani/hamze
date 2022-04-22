@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap');
+
+$font : 'Vazirmatn', sans-serif;
+body{
+    font-family: $font;
+    color : $n10;
+}
+@mixin type($weight, $size, $spacing, $leading) {
+    font-weight: $weight;
+    font-size: $size;
+    letter-spacing: $spacing;
+    line-height: $leading;
+}
+  
+
+.h1 , h1 {
+    text-transform: capitalize;
+    @include type(400, 12rem, auto, auto);
+    //@include xlScreen { @include type(300, 18rem, auto, auto);}
+    //@include lScreen { @include type(300, 12rem, auto, auto);}
+    //@include mScreen { @include type(300, 12rem, auto, auto);}
+    //@include sScreen { @include type(300, 7rem, auto, auto);}
+}
+.h2 , h2 {
+    text-transform: capitalize;
+    @include type(400, 7.5rem, auto, auto);
+    //@include xlScreen { @include type(300, 18rem, auto, auto);}
+    //@include lScreen { @include type(300, 12rem, auto, auto);}
+    //@include mScreen { @include type(300, 12rem, auto, auto);}
+    //@include sScreen { @include type(300, 7rem, auto, auto);}
+}
+.h3 , h3 {
+    text-transform: capitalize;
+    @include type(600, 6rem, auto, auto);
+    //@include xlScreen { @include type(300, 18rem, auto, auto);}
+    //@include lScreen { @include type(300, 12rem, auto, auto);}
+    //@include mScreen { @include type(300, 12rem, auto, auto);}
+    //@include sScreen { @include type(300, 7rem, auto, auto);}
+}
+.h4 , h4 {
+    text-transform: capitalize;
+    @include type(600, 5rem, auto, auto);
+    //@include xlScreen { @include type(300, 18rem, auto, auto);}
+    //@include lScreen { @include type(300, 12rem, auto, auto);}
+    //@include mScreen { @include type(300, 12rem, auto, auto);}
+    //@include sScreen { @include type(300, 7rem, auto, auto);}
+}
+.h5 , h5 {
+    text-transform: capitalize;
+    @include type(600, 4rem, auto, auto);
+    //@include xlScreen { @include type(300, 18rem, auto, auto);}
+    //@include lScreen { @include type(300, 12rem, auto, auto);}
+    //@include mScreen { @include type(300, 12rem, auto, auto);}
+    //@include sScreen { @include type(300, 7rem, auto, auto);}
+}
+.h6 , h6 {
+    text-transform: capitalize;
+    @include type(600, 3rem, auto, auto);
+    //@include xlScreen { @include type(300, 18rem, auto, auto);}
+    //@include lScreen { @include type(300, 12rem, auto, auto);}
+    //@include mScreen { @include type(300, 12rem, auto, auto);}
+    //@include sScreen { @include type(300, 7rem, auto, auto);}
+}
+.subtitle1 {
+    text-transform: capitalize;
+    @include type(800, 2rem, auto, auto);
+    //@include xlScreen { @include type(300, 18rem, auto, auto);}
+    //@include lScreen { @include type(300, 12rem, auto, auto);}
+    //@include mScreen { @include type(300, 12rem, auto, auto);}
+    //@include sScreen { @include type(300, 7rem, auto, auto);}
+}
+.subtitle2 {
+    text-transform: capitalize;
+    @include type(800, 1.75rem, auto, auto);
+    //@include xlScreen { @include type(300, 18rem, auto, auto);}
+    //@include lScreen { @include type(300, 12rem, auto, auto);}
+    //@include mScreen { @include type(300, 12rem, auto, auto);}
+    //@include sScreen { @include type(300, 7rem, auto, auto);}
+}
+.body1 {
+    text-transform: capitalize;
+    @include type(400, 2rem, auto, auto);
+    //@include xlScreen { @include type(300, 18rem, auto, auto);}
+    //@include lScreen { @include type(300, 12rem, auto, auto);}
+    //@include mScreen { @include type(300, 12rem, auto, auto);}
+    //@include sScreen { @include type(300, 7rem, auto, auto);}
+}
+.body2 {
+    text-transform: capitalize;
+    @include type(400, 1.75rem, auto, auto);
+    //@include xlScreen { @include type(300, 18rem, auto, auto);}
+    //@include lScreen { @include type(300, 12rem, auto, auto);}
+    //@include mScreen { @include type(300, 12rem, auto, auto);}
+    //@include sScreen { @include type(300, 7rem, auto, auto);}
+}
+.caption {
+    text-transform: capitalize;
+    @include type(400, 1.5rem, auto, auto);
+    //@include xlScreen { @include type(300, 18rem, auto, auto);}
+    //@include lScreen { @include type(300, 12rem, auto, auto);}
+    //@include mScreen { @include type(300, 12rem, auto, auto);}
+    //@include sScreen { @include type(300, 7rem, auto, auto);}
+}
+.overline {
+    text-transform: capitalize;
+    @include type(400, 1.25rem, auto, auto);
+    //@include xlScreen { @include type(300, 18rem, auto, auto);}
+    //@include lScreen { @include type(300, 12rem, auto, auto);}
+    //@include mScreen { @include type(300, 12rem, auto, auto);}
+    //@include sScreen { @include type(300, 7rem, auto, auto);}
+}
+

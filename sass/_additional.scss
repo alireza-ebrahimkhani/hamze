@@ -1,0 +1,8 @@
+a{
+    color: $n10;
+    transition: $fMotion;
+    &:hover{
+        color: $n6;
+        transition: $fMotion;
+    }
+}
