@@ -116,7 +116,7 @@ html {
 
 body {
   font-family: "Vazirmatn", sans-serif;
-  color: #201e1e;
+  color: black;
 }
 
 .h1, h1 {
@@ -218,6 +218,7 @@ body {
 .header {
   font-size: 2rem;
   line-height: 2rem;
+  position: fixed;
 }
 
 .header-wrapper {
@@ -245,16 +246,6 @@ body {
   }
 }
 
-.header-mobileToolBar {
-  display: none;
-}
-
-@media only screen and (max-width: 1023px) {
-  .header-mobileToolBar {
-    display: block;
-  }
-}
-
 .header-firstName {
   grid-column: 1 / 4;
   justify-self: right;
@@ -270,6 +261,7 @@ body {
 .header-firstName > a {
   font-weight: 800;
   font-size: 3rem;
+  padding: 1rem 0  !important;
 }
 
 .header-lastName {
@@ -287,6 +279,7 @@ body {
 .header-lastName > a {
   font-weight: 800;
   font-size: 3rem;
+  padding: 1rem 0 !important;
 }
 
 .header-toolBar {
@@ -338,7 +331,7 @@ body {
   width: 3rem;
   height: 2rem;
   display: inline-block;
-  border: 1px solid #201e1e;
+  border: 1px solid black;
   vertical-align: middle;
   margin-top: -.5rem;
 }
@@ -351,7 +344,7 @@ body {
 .header-translatePin {
   width: 1.25rem;
   height: 1.25rem;
-  background-color: #201e1e;
+  background-color: black;
   margin: .25rem .25rem .25rem 1.25rem;
   transition: 0.2s all ease;
 }
@@ -366,41 +359,57 @@ body {
   padding: 1rem;
 }
 
-.header-mobileToolBar {
-  grid-column: 1 / 7;
-  align-self: center;
-}
-
-@media only screen and (max-width: 599px) {
-  .header-mobileToolBar {
-    grid-column: 1 / 4;
-    grid-row: 1;
-  }
-}
-
-.header-mobileToolBar > div {
-  float: left;
-  margin-right: 1rem;
-}
-
 .header-fullName {
   font-weight: 800;
   font-size: 3rem;
   line-height: 2.5rem;
+  grid-column: 1 / 7;
+  align-self: center;
+  margin-left: 7rem;
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .header-fullName {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .header-fullName {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    margin-left: 6rem;
+  }
 }
 
 .header-hamIco {
   width: 5rem;
   height: 3rem;
-  position: relative;
+  position: fixed;
+  top: 2.25rem;
+  left: 3rem;
   margin: 0.5rem 0;
   cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .header-hamIco {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .header-hamIco {
+    left: 2rem;
+  }
 }
 
 .header-line {
   height: 0.125rem;
   width: 5rem;
-  background-color: #201e1e;
+  background-color: black;
   position: absolute;
   top: calc(1.5rem - 1px);
 }
@@ -409,7 +418,7 @@ body {
   content: "";
   height: 1px;
   width: 5rem;
-  background-color: #201e1e;
+  background-color: black;
   position: absolute;
   top: -1rem;
   transform: rotate(0deg);
@@ -420,7 +429,7 @@ body {
   content: "";
   height: 1px;
   width: 5rem;
-  background-color: #201e1e;
+  background-color: black;
   position: absolute;
   top: 1rem;
   transform: rotate(0deg);
@@ -445,8 +454,21 @@ body {
   transition: 0.2s all ease;
 }
 
+.header-popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: black;
+  color: white;
+  top: 0;
+}
+
+.header-popup a {
+  color: white;
+}
+
 a {
-  color: #201e1e;
+  color: black;
   transition: 0.2s all ease;
 }
 
