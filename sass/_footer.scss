@@ -1,0 +1,58 @@
+.footer{
+    border-top: 1px solid $n2;
+    font-family: $font;
+    &-wrapper{
+        width: 100%;
+        padding: 0 6rem;
+        display: grid;
+        height: 9rem;
+        grid-template-columns: repeat(12 , 1fr);
+        column-gap: 3rem;
+        @include mScreen {
+            padding: 0 3rem;
+            grid-template-columns: repeat(8 , 1fr);
+            row-gap: 1rem;
+        }
+        @include sScreen {
+            padding: 0 2rem;
+            grid-template-columns: repeat(4 , 1fr);
+        }
+    }
+    &-copyRight{
+        font-size: 1.5rem;
+        align-self: center;
+        justify-self: right;
+        grid-column: 10 / 13;
+        @include mScreen {
+            grid-column: 5 / 9;
+            align-self: start;
+            justify-self: right;
+            grid-row: 2;
+        }
+        @include sScreen {
+            grid-column: 1 / 8;
+        }
+    }
+    &-emailWrapper{
+        font-size: 2rem;
+        grid-column: 1 / 4;
+        justify-self: right;
+        align-self: center;
+        @include mScreen {
+            align-self: end;
+            justify-self: left;
+            grid-column: 1 / 5;
+            grid-row: 1;
+        }
+    }
+    &-socialsWrapper{
+        font-size: 2rem;
+        grid-column: 4 / 10;
+        align-self: center;
+        @include mScreen {
+            grid-column: 1 / 4;
+            grid-row: 2;
+            align-self: start;
+        }
+    }
+}

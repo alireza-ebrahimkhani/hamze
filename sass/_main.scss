@@ -1,0 +1,13 @@
+
+.main{
+    width: 100%;
+    padding: 0 6rem;
+    min-height: calc(100vh - 18rem - 1px);
+    margin-top: 9rem;
+    @include mScreen {
+        padding: 0 3rem;
+    }
+    @include sScreen {
+        padding: 0 2rem;
+    }
+}

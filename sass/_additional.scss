@@ -6,3 +6,8 @@ a{
         transition: $fMotion;
     }
 }
+.body{
+    &--pause{
+        overflow-y: hidden;
+    }
+}

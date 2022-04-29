@@ -6,10 +6,12 @@ translate.addEventListener('click' , () => {
 })
 
 // hamIco **
+let body = document.querySelector('body')
 let hamIco = document.querySelector('.header-hamIco')
 let popup = document.querySelector('.header-popup')
 hamIco.addEventListener('click' , () => {
     let line = hamIco.querySelector('.header-line')
     line.classList.toggle('header-line--active')
     popup.classList.toggle('header-popup--active')
+    body.classList.toggle('body--pause')
 })

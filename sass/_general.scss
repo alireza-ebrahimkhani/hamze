@@ -11,3 +11,25 @@ html{
 $fMotion : .2s all ease;
 $mMotion : .4s all ease;
 $sMotion : .6s all ease;
+
+
+/* width */
+::-webkit-scrollbar {
+    width: .5rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:$n4;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $n8;
+    cursor: pointer;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $n10;
+  }
