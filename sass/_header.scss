@@ -1,4 +1,5 @@
 .header{
+    width: 100%;
     font-size: 2rem;
     line-height: 2rem;
     position: fixed;
@@ -128,6 +129,7 @@
         top: 2.25rem;
         left:3rem;
         margin: 0.5rem 0;
+        z-index: 10;
         cursor: pointer;
         display: none;
         @include mScreen {
@@ -165,14 +167,17 @@
         }
         &--active{
             height: 0px;
+            background-color: $n0;
             &::before{
                 content: "";
+                background-color: $n0;
                 top: calc( 0rem);
                 transform: rotate(25deg);
                 transition: $fMotion;
             }
             &::after{
                 content: "";
+                background-color: $n0;
                 top: calc( 0rem);
                 transform: rotate(-25deg);
                 transition: $fMotion;
@@ -182,14 +187,46 @@
     &-popup{
         width: 100%;
         height: 100vh;
-        //visibility: hidden;
-        //opacity: 0;
+        visibility: hidden;
+        opacity: 0;
         position: fixed;
         background-color: $n10;
         color:$n0 ;
         top: 0;
+        transition: $sMotion;
+        &--active{
+            visibility: visible;
+            opacity: 1;
+            transition: $sMotion;
+        }
+        &Wrapper{
+            position: fixed;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+        }
         & a{
-            color:$n0 ;
+            color:$n0;
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+        &FullName a{
+            font-weight: 800;
+            font-size: 5rem;
+            line-height: 5rem;
+        }
+        &SocialsWrapper{
+            margin-top: 3rem;
+        }
+        &Menu{
+            margin-top: 3rem;
+        }
+        &MenuItem{
+            margin:.5rem;
+        }
+        &SocialMenuItem > a{
+            font-weight: 400;
         }
     }
 }
